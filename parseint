@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------------------------------------------
+add.html
+-------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>parseInt</title>
+</head>
+<h1 style="color:red">takes a number and multiplies with 2 and prints the result</h1>
+<h2> this program explains how the string entered here will be converted to integer in jsp using parseInt </h2>
+<body>
+<form action ="date.jsp">
+enter a number:
+<input type="text" name ="num"/>
+<input type="submit" value="submit"/>
+</form>
+</body>
+</html>
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+add.jsp
+
+<html>
+<body>
+<h2>
+<%
+String num=request.getParameter("num");
+int n=Integer.parseInt(num); 
+out.println(n*2);
+%>
+</h2>
+</body>
+</html>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
